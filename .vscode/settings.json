@@ -1,0 +1,17 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "lib/**": true,
+    "node_modules": true,
+  },
+  "search.exclude": {
+    "lib/**": true,
+  },
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "my-agent",
+  "version": "0.0.1",
+  "description": "A generic iTwin.js 'starter' agent.",
+  "author": "Bentley Systems",
+  "license": "MIT",
+  "private": true,
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc 1>&2",
+    "start": "node ./lib/main.js",
+    "debug": "node --inspect-brk=9229 ./lib/main.js",
+    "clean": "rimraf lib",
+    "lint": "eslint \"./src/**/*.ts\" 1>&2"
+  },
+  "dependencies": {
+    "@bentley/backend-itwin-client": "^2.13.0",
+    "@bentley/bentleyjs-core": "^2.13.0",
+    "@bentley/ecschema-metadata": "^2.13.0",
+    "@bentley/frontend-authorization-client": "^2.13.0",
+    "@bentley/geometry-core": "^2.13.0",
+    "@bentley/imodelhub-client": "^2.13.0",
+    "@bentley/imodeljs-backend": "^2.13.0",
+    "@bentley/imodeljs-common": "^2.13.0",
+    "@bentley/imodeljs-i18n": "^2.13.0",
+    "@bentley/itwin-client": "^2.13.0",
+    "@bentley/rbac-client": "^2.13.0",
+    "@bentley/telemetry-client": "^2.13.0",
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "onanykey": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^14.0.14",
+    "@typescript-eslint/parser": "4.16.1",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "eslint": "^6.8.0",
+    "rimraf": "^2.6.2",
+    "typescript": "~4.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "tsconfig.json",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-import { Changeset, EntityListIterator, IModelsClient } from "@itwin/imodels-client-management";
+import { IModelsClient } from "@itwin/imodels-client-management";
 import ITwinAuthService from "./auth.service";
 
 

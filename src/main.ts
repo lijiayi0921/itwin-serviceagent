@@ -12,7 +12,7 @@ console.log("MY AGENT STARTED");
 (async () => {
   try {
 
-    const modelInfo = await IModelService.GetModelInfo("023edc75-8441-4649-9727-e9e350632e08");
+    const modelInfo = await IModelService.GetModelInfo(process.env.IMODEL_ID);
     console.log(modelInfo)
     console.log("MY AGENT FINISHED");
   } catch (error) {

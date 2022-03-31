@@ -8,7 +8,7 @@ Error: Authorization error: token_endpoint must be configured on the issuer
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async Function.ITwinAuthService.getAccess (MY_PATH\server\build\services\itwin\auth.service.js:24:25)
     at async Function.GetModelInfo (MY_PATH\server\build\services\itwin\imodel.service.js:17:30)
-    at async Function.FileService.repairFile ...........
+    at .........
 
 ## Error encountered in this demo
   

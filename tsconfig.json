@@ -14,7 +14,7 @@
     "declaration": false,
     "declarationMap": false,
     "outDir": "./lib",
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true,
     "noUnusedLocals": false,
     "noFallthroughCasesInSwitch": false,
